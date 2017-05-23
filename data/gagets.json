@@ -1,0 +1,38 @@
+{"id_category":3,
+  "items":[
+    {
+      "title":"Захватывающие атракционы",
+      "image":"1392291915_45_124165215.jpg",
+      "data":124165215
+    },
+    {
+      "title":"Две брюнетки постят себя в инстаграме. Смотреть без регистрации и СМС",
+      "image":"Animals_2_154165215.jpg",
+      "data":154125214
+    },
+    {
+      "title":"Флешка-кошка",
+      "image":"foto_00415_154165315.jpg",
+      "data":154165315
+    },
+    {
+      "title":"Электронная гусеница",
+      "image":"lowcost2.ru_2014.05.18-04.43.02_512912_61xzdc8jlml._sl1500__154155215.jpg",
+      "data":154155215
+    }
+  ],
+  "bunners":[
+    {
+      "position":"left",
+      "bunner":"ads.png"
+    },
+    {
+      "position":"center",
+      "bunner":"ads.png"
+    },
+    {
+      "position":"center",
+      "bunner":"ads.png"
+    }
+  ]
+}

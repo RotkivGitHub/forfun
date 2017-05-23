@@ -1,0 +1,30 @@
+[
+  {
+    "id_category":1,
+    "name":"Животные",
+    "nameEn":"animal",
+    "file_name":"animal.json",
+    "load":12
+  },
+  {
+    "id_category":2,
+    "name":"Авто",
+    "nameEn":"auto",
+    "file_name":"auto.json",
+    "load":7
+  },
+  {
+    "id_category":3,
+    "name":"Гаджеты",
+    "nameEn":"gagets",
+    "file_name":"gagets.json",
+    "load":5
+  },
+  {
+    "id_category":4,
+    "name":"Природа",
+    "nameEn":"nature",
+    "file_name":"nature.json",
+    "load":8
+  }
+]

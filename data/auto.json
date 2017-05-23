@@ -1,0 +1,43 @@
+{"id_category":2,
+  "items":[
+    {
+      "title":"Жигуль-танк",
+      "image":"158273_1541232115.jpg",
+      "data":1541232115
+    },
+    {
+      "title":"Трансформеры. Начало.",
+      "image":"7358296_15421225215.jpg",
+      "data":15421225215
+    },
+    {
+      "title":"Захватывающие атракционы",
+      "image":"1392291915_45_124165215.jpg",
+      "data":124165215
+    },
+    {
+      "title":"Газель уплыла",
+      "image":"1434743260_fotoprikoly-pro-avtomobili-9_154105215.jpg",
+      "data":154105215
+    },
+    {
+      "title":"Зачем дальнобойщику туфли?",
+      "image":"1444377496_avto7_254165315.jpg",
+      "data":254165315
+    }
+  ],
+  "bunners":[
+    {
+      "position":"left",
+      "bunner":"ads.png"
+    },
+    {
+      "position":"center",
+      "bunner":"ads.png"
+    },
+    {
+      "position":"center",
+      "bunner":"ads.png"
+    }
+  ]
+}
