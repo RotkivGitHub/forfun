@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="guvi.cx.ua">
+  <component name="PublishConfigData">
     <serverData>
-      <paths name="focus.cityhost.com.ua">
+      <paths name="Calc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Calc_ftp">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -16,10 +23,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="guvi.cx.ua">
+      <paths name="guvi">
         <serverdata>
           <mappings>
-            <mapping deploy="/www/guvi.cx.ua/projects/forfun" local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

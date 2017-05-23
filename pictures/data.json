@@ -1,0 +1,47 @@
+  "items":[
+    {
+      "title":"Мимимишный ёж",
+      "image":"133379_224090_1541232215.jpg",
+      "data":154125211
+    },
+    {
+      "title":"Кенгуру отдыхает",
+      "image":"213977_1541225215.jpg",
+      "data":154125212
+    },
+    {
+      "title":"Дружба в дикой природе. Птиц  помогает уставшему рыбу попасть домой",
+      "image":"91263183_154165215.jpg",
+      "data":154125213
+    },
+    {
+      "title":"Две брюнетки постят себя в инстаграме. Смотреть без регистрации и СМС",
+      "image":"Animals_2_154165215.jpg",
+      "data":154125214
+    },
+    {
+      "title":"Кролик показывает язык ",
+      "image":"maxresdefault_154165215.jpg",
+      "data":154125215
+    },
+    {
+      "title":"Ёж в катусах",
+      "image":"oboi-rabochego-stola-zhivotnie-priroda-prikoli.orig_154165215.jpg",
+      "data":154125216
+    }
+  ],
+  "bunners":[
+    {
+      "position":"left",
+      "bunner":"ads.png"
+    },
+    {
+      "position":"center",
+      "bunner":"ads.png"
+    },
+    {
+      "position":"center",
+      "bunner":"ads.png"
+    }
+  ]
+}
