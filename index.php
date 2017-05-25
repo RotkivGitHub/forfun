@@ -88,7 +88,8 @@
                <button type="button" class="btn btn-success btn-lg W185" id="more-pictures">Еще картинок!</button>
 
             </div>
-            
+
+             
             <div class="col-lg-3 col-md-3 col-sm-3">
 
                 <?php include 'admin/right-block.php';?>
