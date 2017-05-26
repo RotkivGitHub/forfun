@@ -27,7 +27,11 @@
             </div>
          </div>
 
-         <h1>ForFun<br> <span>территория веселых картинок</span></h1>
+         <h1>
+             <?php echo $info["site_title"];?>
+             <br> <span>
+                 <?php echo $info["note"];?>
+                </span></h1>
 
 
          <div id="menu--sandwich">

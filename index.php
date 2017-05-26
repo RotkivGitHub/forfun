@@ -1,3 +1,4 @@
+<?php require_once 'api/api.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,6 +52,22 @@
                      <li class="list-group-item checked" value="all" id="all">
                         <span class="badge">123</span> Все
                      </li>
+
+                      <?php
+
+                      foreach ($categories as $category) {?>
+                            <li class="list-group-item checked"
+                                value="<?php echo $category["nameEn"];?>"
+                                id="<?php echo $category["nameEn"];?>">
+                             <span class="badge">
+                                 <?php echo $category["load"];?>
+                             </span>
+                                <?php echo $category["name"];?>
+                            </li>
+                        <?php }
+
+                      ?>
+
 <!--                     <li class="list-group-item" value="animal" id="animal">-->
 <!--                        <span class="badge">14</span> Животные-->
 <!--                     </li>-->
@@ -89,7 +106,7 @@
 
             </div>
 
-             
+
             <div class="col-lg-3 col-md-3 col-sm-3">
 
                 <?php include 'admin/right-block.php';?>
