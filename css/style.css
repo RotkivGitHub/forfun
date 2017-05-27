@@ -16,11 +16,6 @@
    width: 330px;
    color: white;
    line-height: 20px
-/*   border-radius: 50%;*/
-/*   background: white;*/
-/*   background-image: url(../img/background2.jpg);*/
-/*   background-size: 120px 120px;*/
-   
 }
 
 #header h1 span{
@@ -36,7 +31,6 @@ body {
    background-attachment: fixed;
    background-size: initial;
 }
-
 
 #header {
    background: rgba(30, 109, 85, 0.22) url(../img/spectrum_1.jpg);
@@ -429,6 +423,20 @@ footer {
    padding: 30px 10px 0 10px;
 }
 
+#gallery .left,
+#gallery .right {
+   float: left;
+   color: rgba(128, 0, 238, 1);
+}
+
+#gallery .left {
+   font-size: 1.5em;
+   float: left;
+}
+#gallery .right {
+   font-size: 1.2em;
+   float: right;
+}
 
 
 @keyframes slideOutUp {

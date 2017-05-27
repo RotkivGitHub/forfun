@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    getCat();
+    // getCat();
 
 /* открытие выпадающего меню-гамбургера по клику*/
    $('#menu--sandwich_button').click(function () {
@@ -50,9 +50,9 @@ $(document).ready(function () {
       });
    });
 
-   function catChanger() {
        /*смена категориии*/
-    $("#category li").click(function(){
+    $("#category li").click(function catChanger(){
+        console.log($(this));
         $("#category li").removeClass("checked");
         $(this).addClass("checked");
         var cat = $(this)[0].id;
@@ -60,11 +60,11 @@ $(document).ready(function () {
         $("#gallery").html('');
         getData("category", cat);
     });
-   }
+
 
 
 /*первоначальная загрузка*/
-    getData("category", "animal");
+    // getData("category", "animal");
 
 /*постройка галереи изображений на странице*/
     function gallery(answer) {

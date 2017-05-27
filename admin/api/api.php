@@ -2,16 +2,16 @@
 
     define('CATEGORY', 'data/categories.json');
     define('INFO', 'DB/info.json');
-    define('CATEGORY_ITEMS', 'data/category');
-    define('IMAGE_PATH', 'data/category');
+    define('CATEGORY_ITEMS', 'data/category_');
+    define('IMAGE_PATH', 'pictures/');
 
 
     $categories = getCategories();
     $info = getInfo();
-    $items = getItemsFromCategoryIdByStep(1,0,10);
+    $items = getItemsFromCategoryIdByStep("animal",0,10);
     $banners = array();
 
-//    var_dump($info);
+//    var_dump($items);
 
 //    echo $categories;
 
@@ -25,7 +25,7 @@
 
     }
 
-    function getCategorieById($id) {
+    function getCategoriById($id) {
         if (file_exists(CATEGORY)) {
             $data = file_get_contents(CATEGORY);
             $categories = json_decode($data, true);
@@ -50,8 +50,7 @@
     function getItemsFromCategoryIdByStep($id,$step = 0,$count = 10) {
         $startPosition = $step * $count;
         $endPosition = $startPosition + $count;
-        $position = $step*$count;
-        $fileName = CATEGORY_ITEMS.$id."csv";
+        $fileName = CATEGORY_ITEMS.$id.".csv";
         if (file_exists($fileName)) {
             $items = array();
             $handler = fopen($fileName,"r");
@@ -60,20 +59,17 @@
                     break;
                 }
                 if ($i >= $startPosition) {
-                    $items =
+                    $items[] = $item;
                 }
-            };
-
-        }
-        fclose($fileName)
-
-
-        if (file_exists(INFO)) {
-            $data = file_get_contents(INFO);
-            return json_decode($data, true);
+            }
+            fclose($handler);
+            return $items;
         }
         return "ERROR";
     }
+
+
+
 ?>
 
 
