@@ -1,4 +1,6 @@
-<footer class="container-fluif">
+<footer class="container-fluid">
+    <i class="fa fa-chevron-up" id="footer-arrow" aria-hidden="true"></i>
+
     <i class="fa fa-facebook" aria-hidden="true"></i>
     |
     <i class="fa fa-pinterest-p" aria-hidden="true"></i>

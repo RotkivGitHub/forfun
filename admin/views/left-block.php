@@ -43,3 +43,30 @@
         </div>
     </div>
 </div>
+
+<div class="category" id="category--xs">
+    <h2>Категории</h2>
+    <div class="menu--closeButton" id="category--closeButton">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    </div>
+    <ul class="list-group" id="category-list">
+        <li class="list-group-item checked" value="all" id="all">
+            <span class="badge">123</span> Все
+        </li>
+
+        <?php
+
+        foreach ($categories as $category) { ?>
+            <li class="list-group-item"
+                value="<?php echo $category["nameEn"]; ?>"
+                id="<?php echo $category["nameEn"]; ?>">
+                             <span class="badge">
+                                 <?php echo $category["load"]; ?>
+                             </span>
+                <?php echo $category["name"]; ?>
+            </li>
+        <?php }
+
+        ?>
+
+</div>

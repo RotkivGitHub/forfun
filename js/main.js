@@ -50,6 +50,30 @@ $(document).ready(function () {
       });
    });
 
+/* открытие футера по наведению */
+    $('footer').mouseover(function () {
+        $("footer").css("bottom", "0");
+        $("#footer-arrow").css("transform","scale(0)");
+    });
+
+/* скрытие футера при потере фокуса */
+    $('footer').mouseleave(function () {
+        $("footer").css("bottom", "-50px");
+        $("#footer-arrow").css("transform","scale(1)");
+    });
+
+/* открытие меню категорий на узких экранах по клику */
+    $('#menu--categories--xs').click(function () {
+        $("#category--xs").slideDown();
+    });
+
+/* скрытие меню категорий на узких экранах */
+    $('#category--closeButton').click(function () {
+        // $("#category--xs").css("display", "none");
+        $("#category--xs").slideUp();
+
+    });
+
        /*смена категориии*/
     $("#category li").click(function catChanger(){
         console.log($(this));
