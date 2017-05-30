@@ -50,14 +50,17 @@
     function getItemsFromCategoryIdByStep($id,$step = 0,$count = 10) {
         $fileName = CATEGORY_ITEMS.$id.".csv";
         $lenght = 0;
-        $ft = fopen($fileName, "r");
+        $handler = fopen($fileName, "r");
 
-        while (!feof($ft)) {
-            fgets($ft);
+        while (!feof($handler)) {
+            fgets($handler);
             $lenght++;
         }
-        fclose($ft);
-      echo $lenght;
+//        fclose($ft);
+
+//        echo $lenght;
+
+        rewind($handler);
 
 //        $startPosition = $step * $count;
 //        $endPosition = $startPosition + $count;
@@ -65,7 +68,7 @@
         $endPosition = $startPosition + $count;
         if (file_exists($fileName)) {
             $items = array();
-            $handler = fopen($fileName,"r");
+//            $handler = fopen($fileName,"r");
             for ($i=0; $item = fgetcsv($handler); $i++) {
                 if ($i >= $endPosition){
                     break;
@@ -75,7 +78,7 @@
                 }
             }
             fclose($handler);
-            var_dump($items);
+//            var_dump($items);
             $itemsReversed = array_reverse($items);
             return $itemsReversed;
 

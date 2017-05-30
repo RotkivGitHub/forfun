@@ -74,6 +74,12 @@ $(document).ready(function () {
 
     });
 
+//валидация и отправка сообщения
+    $("#sendMessage").click(function () {
+
+    });
+
+
        /*смена категориии*/
     $("#category li").click(function catChanger(){
         console.log($(this));

@@ -12,6 +12,7 @@
                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
                     </div>
                     <div class="right">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
                         <?php echo date('d-m-Y', $item[2]);?>
                     </div>
                     <br>
