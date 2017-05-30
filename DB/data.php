@@ -1,4 +1,5 @@
 <?php
+$lenght = 0;
 
 header ('content-type: text/html; charset=UTF-8');
 
@@ -9,15 +10,19 @@ echo "hello world";
 /*построчный вывод с учетом формтатирования*/
 echo "<pre>";
 
-$ft = fopen("data.csv", "r");
+$ft = fopen("category_animal.csv", "r");
 while (!feof($ft)) {
-    $bufer = fgets($ft);
-    echo $bufer;
+//    $bufer = fgets($ft);
+//    echo $bufer;
+    fgets($ft);
+    $lenght++;
 }
 
-echo "</pre>";
+//fwrite($ft, '23');
 
 fclose($ft);
+
+echo $lenght;
 
 /*___________________________________________*/
 

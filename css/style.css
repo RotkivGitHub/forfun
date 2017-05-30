@@ -1,4 +1,14 @@
 /*------- A -------*/
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   text-decoration: none;
+   color: inherit;
+}
+
 .ads {
    margin-top: 40px
 }
@@ -114,6 +124,12 @@ footer #footer-arrow{
    left: 50%;
    transition: all .5s;
 }
+
+footer i:hover{
+   color: #ccc;
+   transform: translateY(-3px);
+}
+
 /*------- G -------*/
 #gallery{
    width: 100%;

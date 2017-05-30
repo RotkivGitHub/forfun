@@ -48,22 +48,37 @@
     }
 
     function getItemsFromCategoryIdByStep($id,$step = 0,$count = 10) {
-        $startPosition = $step * $count;
-        $endPosition = $startPosition + $count;
         $fileName = CATEGORY_ITEMS.$id.".csv";
+        $lenght = 0;
+        $ft = fopen($fileName, "r");
+
+        while (!feof($ft)) {
+            fgets($ft);
+            $lenght++;
+        }
+        fclose($ft);
+      echo $lenght;
+
+//        $startPosition = $step * $count;
+//        $endPosition = $startPosition + $count;
+        $startPosition = $lenght  - ($step * $count + $count);
+        $endPosition = $startPosition + $count;
         if (file_exists($fileName)) {
             $items = array();
             $handler = fopen($fileName,"r");
             for ($i=0; $item = fgetcsv($handler); $i++) {
-                if ($i >= $endPosition) {
+                if ($i >= $endPosition){
                     break;
                 }
-                if ($i >= $startPosition) {
+                if ($i >= $startPosition){
                     $items[] = $item;
                 }
             }
             fclose($handler);
-            return $items;
+            var_dump($items);
+            $itemsReversed = array_reverse($items);
+            return $itemsReversed;
+
         }
         return "ERROR";
     }

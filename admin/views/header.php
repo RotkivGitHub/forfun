@@ -48,10 +48,10 @@
 
             <br> <br> <br>
             <ul class='menu--sandwich'>
-                <li>О нас</li>
-                <li>Добавить картинку</li>
-                <li>Связаться с нами</li>
-            </ul>git status
+                <a href="#"><li>О нас</li></a>
+                <a href="#"><li>Добавить картинку</li></a>
+                <a href="#"><li>Связаться с нами</li></a>
+            </ul>
         </div>
 
         <div id="menu--categories--xs">
